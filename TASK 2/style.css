@@ -1,0 +1,162 @@
+ 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f4f4;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* Header */
+.header {
+  background: #222;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.title {
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+}
+
+.biography {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* vertically center the quote */
+  gap: 20px;
+}
+
+.bio-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.biography blockquote {
+  font-size: 1.5rem;
+  line-height: 1.8;
+  font-style: italic;
+  color: #444;
+  border-left: 5px solid #e67e22;
+  padding-left: 15px;
+}
+
+/* Biography image */
+.biography img {
+  width: 40%;
+  max-width: 350px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* On smaller screens stack vertically */
+@media (max-width: 768px) {
+  .biography {
+    flex-direction: column;
+  }
+
+  .biography img {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+/* Section container */
+.section {
+  background: #fff;
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+
+  display: flex;
+  flex-direction: row;
+  align-items: stretch; /* Make both columns equal height */
+  gap: 20px;
+}
+
+/* Left column (text) */
+.section-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertically center content */
+}
+
+/* Headings */
+.section h2 {
+  font-size: 2rem;
+  color: #2c3e50;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+/* Text styles: slightly larger and more line spacing */
+.section p,
+.section ul,
+.section blockquote {
+  font-size: 1.15rem;
+  line-height: 1.8;
+}
+
+/* Paragraph */
+.about {
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+/* Images aligned to the right */
+.section img {
+  width: 40%;
+  max-width: 350px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Lists */
+.section ul {
+  margin: 10px 0 0 20px;
+  list-style: square;
+}
+
+.section ul li {
+  margin-bottom: 10px;
+}
+
+/* Highlight */
+.highlight {
+  color: #e67e22;
+  font-weight: bold;
+}
+
+/* Blockquote */
+blockquote {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #555;
+  border-left: 5px solid #e67e22;
+  padding-left: 15px;
+  margin-bottom: 15px;
+}
+
+/* Responsive layout for small screens */
+@media (max-width: 768px) {
+  .section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section img {
+    width: 100%;
+    max-width: 100%;
+  }
+}
