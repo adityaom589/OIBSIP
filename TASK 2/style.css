@@ -28,7 +28,7 @@ body {
 .biography {
   display: flex;
   flex-direction: row;
-  align-items: center; /* vertically center the quote */
+  align-items: center; 
   gap: 20px;
 }
 
